@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Form a Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+    </section>
+
+    <section id="main">
+      <h1>Complete the Form -<br> Complete the Story!</h1>
+      <hr>
+      <!--Add your form below:-->
+      <form action="story.html" method="GET">
+        <input id="animal-1" type="text" name="animal-1" required>
+        <br>
+        <label for="animal-2">
+          <input id="animal-2" name="animal-2" type="text" required>
+          </label>
+          <br>
+          <label for="animal-3">
+            <input id="animal-3" name="animal-3" type="text" required>
+            </label>
+          <br>
+          <label for="adj-1">
+            <input id="adj-1" name="adj-1" type="text" required>
+            </label>
+          <br>
+          <label for="verb-1">
+            <input id="verb-1" name="verb-1" type="text" required>
+            </label>
+          <br>
+          <label for="num-1">
+            <input id="num-1" name="num-1" type="number" required>
+            </label>
+            <br>
+            <span>Yes or No:</span>
+            <input id="yes" type="radio" name="answer" value="yes" required>
+            <label for="yes"> 
+            </label>
+        <input id="no" type="radio" name="answer" value="no">
+        <label for="no">
+          </label>
+          <br> 
+          <label for="speed">
+            <select id="speed" name="speed" required>
+              <br>
+              <option value="fast">Fast</option>
+              <option value="faster">Faster</option>
+              <option value="fastest">Fastest</option>
+              </select>
+            <br>
+            <label for="quote"></label>
+              <input id="quote" name="quote" type="text" list="quote-choices" required>
+              <datalist id="quote-choices">
+                <br>
+              <option value="Suck butt!"></option>
+              <option value="Lick it!"></option>
+              </datalist>
+              <br>
+              <h4>Write a moral of the story!</h4>
+              <label for="message"></label>
+                <textarea id="message" name="message" rows="8" cols="40" required>
+                  </textarea>
+                  </label>
+                  <br>
+         <input type="submit" value="Form My Story!">
+        </form>
+    </section>
+  </body>
+</html>
