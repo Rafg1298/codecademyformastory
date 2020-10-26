@@ -6,3 +6,5 @@ return true
     return false
   }
 }
+
+console.log(canIVote(19))
