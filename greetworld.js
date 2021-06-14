@@ -1,4 +1,4 @@
-onst greetWorld = () =>{
+const greetWorld = () =>{
 return 'Hello, World!'
 }
 
